@@ -1,0 +1,225 @@
+/* Main */
+
+html {
+    color: white;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 21px;
+    font-weight: lighter;
+    height: 100vh;
+    line-height: 100%;
+}
+
+body {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background: #0fb6a2;
+    background: -webkit-linear-gradient(left top, #0fb6a2, #156a85);
+    background: -moz-linear-gradient(bottom right, #0fb6a2, #156a85);
+    background: linear-gradient(to bottom right, #0fb6a2, #156a85);
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.form-horizontal{
+    border-top: 1px solid;
+    margin-top: 25px;
+    padding-top: 15px;
+}
+.form-horizontal input {
+    background-clip: padding-box;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, .15);
+    color: #464a4c;
+    font-size: 1rem;
+    padding: 5px 5px;
+    text-align: center;
+    width: 70px;
+}
+
+
+/* Layout */
+
+.center {
+    text-align: center;
+}
+
+.centered {
+    height: 200px;
+    left: 50%;
+    margin: -100px 0 0 -200px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 400px;
+}
+
+
+/* Buttons */
+
+.btn {
+    background-color: #fff;
+    border-radius: .25rem;
+    border: 1px solid rgba(0, 0, 0, .15);
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: .5rem .75rem;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn.btn-icon {
+    padding: 0;
+    background: none;
+    border: none;
+}
+
+.btn>span {
+    padding: 0 0 0 15px;
+}
+
+
+/* Icons */
+
+.icon {
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.icon.view {
+    background-image: url('/../svg/view.svg'), none;
+    background-size: 100% 100%;
+}
+
+.icon.info {
+    background-image: url('/../svg/info.svg'), none;
+    background-size: 100% 100%;
+}
+
+.icon.chevron-up {
+    background-image: url('/../svg/chevron-up.svg'), none;
+    background-size: 100% 100%;
+}
+
+.icon-lg {
+    height: 21px;
+    width: 21px;
+}
+
+.icon-xl {
+    height: 36px;
+    width: 36px;
+}
+
+
+/* Modal */
+
+.modal-screen {
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    height: 100vh;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1;
+}
+
+.modal-screen>* {
+    color: gray;
+}
+
+
+/* Modal Container */
+
+.modal-conatiner {
+    background-color: #fefefe;
+    border: 1px solid #888;
+    height: 40vh;
+    margin: 15% auto;
+    padding: 0 20px;
+    width: 38vw;
+}
+
+.modal-header {
+    border-bottom: 1px solid;
+}
+
+.modal-content>section:nth-child(1) {
+    height: 45px;
+}
+
+.modal-content>section {
+    padding: 45px 0 0 0;
+}
+
+
+/* Modal Close Button */
+
+.close {
+    color: gray;
+    float: right;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Progress Bar */
+
+.progress {
+    line-height: 30px;
+}
+
+.progress label {
+    float: left;
+    margin: 0 3px 0 3px;
+}
+
+.progress-bar {
+    border: 1px solid;
+    border-radius: 6px;
+    display: grid;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 3px;
+    width: 250px;
+}
+
+.progress-bar-fill {
+    background-color: #0f9995;
+    border-radius: 4px;
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    -webkit-transition: 0.4s linear;
+    -moz-transition: 0.4s linear;
+    transition: 0.4s linear;
+    -webkit-transition-property: width, background-color;
+    -moz-transition-property: width, background-color;
+    transition-property: width, background-color;
+    height: 1rem;
+    width: 0%;
+}
+
+.progress-indicator {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 16px;
+    margin-left: 85px;
+    margin-top: 30px;
+    position: absolute;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>My Account</title>
+    <meta name="description" content="My Account - Demo">
+    <meta name="author" content="Mario Octavio">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <section class="centered">
+        <article>
+            <h1>My Account</h1>
+            <p></p>
+            <button class="btn btn-icon js-open-modal">
+                <i class="icon icon-xl view"></i>
+                <span>Click here to see my progress.</span>
+            </button>
+        </article>
+        <article>
+            <form class="form-horizontal">
+                <label>Reached:</label>
+                <input type="number" class="js-reached" value="56" min="0">
+                <label>Target:</label>
+                <input type="number" class="js-target" value="125" min="0">
+            </form>
+        </article>
+    </section>
+
+    <!-- Modal Section-->
+    <section class="modal-screen modal js-modal">
+        <section class="modal-conatiner">
+            <article class="modal-header">
+                <span class="close js-close-modal">&times;</span>
+                <p>Your Progress</p>
+            </article>
+            <article class="modal-content">
+                <section class="progress">
+                    <label>Reached: </label>
+                    <div class="progress-bar">
+                        <div class="progress-bar-fill js-progress"></div>
+                    </div>
+                    <div class="center progress-indicator js-progress-tooltip">
+                        <i class="icon icon-lg chevron-up"></i><br>
+                        $<span class="js-progress-value"></span>
+                    </div>
+                    <label>Target $<span class="js-target-label"></span></label>
+                </section>
+                <section class="center">
+                    <i class="icon icon-lg info"></i>
+                    <label>You need $<span class="js-target-left"></span> more to reach your target.</label>
+                </section>
+            </article>
+        </section>
+    </section>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
