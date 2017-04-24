@@ -13,19 +13,20 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background: #0fb6a2;
-    background: -webkit-linear-gradient(left top, #0fb6a2, #156a85);
-    background: -moz-linear-gradient(bottom right, #0fb6a2, #156a85);
-    background: linear-gradient(to bottom right, #0fb6a2, #156a85);
+    background-image: -webkit-linear-gradient(left top, #0fb6a2, #156a85);
+    background-image: -moz-linear-gradient(bottom right, #0fb6a2, #156a85);
+    background-image: linear-gradient(to bottom right, #0fb6a2, #156a85);
     height: 100vh;
     margin: 0;
     overflow: hidden;
 }
 
-.form-horizontal{
+.form-horizontal {
     border-top: 1px solid;
     margin-top: 25px;
     padding-top: 15px;
 }
+
 .form-horizontal input {
     background-clip: padding-box;
     background-color: #fff;
@@ -53,6 +54,12 @@ body {
     text-align: center;
     top: 50%;
     width: 400px;
+}
+
+.wrap-text {
+    text-align: center;
+    width: 100px;
+    word-wrap: break-word;
 }
 
 
@@ -123,12 +130,12 @@ body {
 .modal-screen {
     background-color: rgba(0, 0, 0, 0.4);
     display: none;
-    height: 100vh;
+    height: 100%;
     left: 0;
     overflow: hidden;
     position: fixed;
     top: 0;
-    width: 100vw;
+    width: 100%;
     z-index: 1;
 }
 
@@ -142,10 +149,10 @@ body {
 .modal-conatiner {
     background-color: #fefefe;
     border: 1px solid #888;
-    height: 40vh;
+    height: 300px;
     margin: 15% auto;
     padding: 0 20px;
-    width: 38vw;
+    width: 490px;
 }
 
 .modal-header {
