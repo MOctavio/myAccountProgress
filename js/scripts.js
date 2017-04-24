@@ -41,12 +41,14 @@ var appController = (function AppController() {
         var reached = parseFloat(document.querySelector(DOMSelector.reached).value);
         var target = parseFloat(document.querySelector(DOMSelector.target).value);
 
-        // Fail save for max values
+        document.querySelector(DOMSelector.progressValue).innerHTML = reached;
+
+        // Progress bar max value when over achived budget
         if (reached > target) reached = target;
 
         document.querySelector(DOMSelector.targetLabel).innerHTML = target;
-        document.querySelector(DOMSelector.targetLeft).innerHTML = target - reached;
-        document.querySelector(DOMSelector.progressValue).innerHTML = reached;
+        document.querySelector(DOMSelector.targetLeft).innerHTML = Math.round((target - reached) * 100) / 100;
+
         reached = Math.round(reached / target * 100);
         document.querySelector(DOMSelector.progressTooltip).style.paddingLeft = 250 * (reached / 100) + 'px';
 
