@@ -100,17 +100,17 @@ body {
 }
 
 .icon.view {
-    background-image: url('/../svg/view.svg'), none;
+    background-image: url('./../svg/view.svg'), none;
     background-size: 100% 100%;
 }
 
 .icon.info {
-    background-image: url('/../svg/info.svg'), none;
+    background-image: url('./../svg/info.svg'), none;
     background-size: 100% 100%;
 }
 
 .icon.chevron-up {
-    background-image: url('/../svg/chevron-up.svg'), none;
+    background-image: url('./../svg/chevron-up.svg'), none;
     background-size: 100% 100%;
 }
 
