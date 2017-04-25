@@ -33,7 +33,7 @@ var appController = (function AppController() {
     function openModal(event) {
         event.preventDefault();
         event.stopPropagation();
-        document.querySelector(DOMSelector.modal).style.display = 'block';
+        document.querySelector(DOMSelector.modal).style.display = 'flex';
         setValues();
     }
 
